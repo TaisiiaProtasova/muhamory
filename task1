@@ -1,0 +1,14 @@
+name = input("Введите ваше имя: ")
+age = int(input("Введите ваш возраст: "))
+
+if 7 <= age <= 17:
+    school_year = age - 6
+    if school_year <= 11:
+        course = (school_year - 1) // 2 + 1
+        print(f"Hello, {name}! You are at {course} course and have {age - 9} years of programming experience. Sounds cool!")
+    else:
+        print(f"Hello, {name}! You are at university and have {age - 17} years of programming experience. Sounds cool!")
+elif 18 <= age <= 21:
+    print(f"Hello, {name}! You are at university and have {age - 17} years of programming experience. Sounds cool!")
+else:
+    print(f"Hello, {name}! You are entrepreneur. Sounds cool!")
