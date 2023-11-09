@@ -1,0 +1,19 @@
+a = int(input())
+b = int(input())
+    if a > b:
+        a %= b
+    else:
+        b %= a
+gcd = a + b
+print(gcd)
+a1 = float(input())
+a2 = float(input())
+a3 = float(input())
+a4 = float(input())
+d = float(input())
+p1 = (a1 + a2 + d) / 2
+p2 = (a3 + a4 + d) / 2
+s1 = (p1 * (p1 - a1) * (p1 - a2) * (p1 - d)) ** (1/2)
+s2 = (p2 * (p2 - a3) * (p2 - a4) * (p2 - d)) ** (1/2)
+s = s1 + s2
+print(s)
